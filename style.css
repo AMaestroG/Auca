@@ -1,0 +1,117 @@
+body {
+    font-family: 'Georgia', serif; /* A more classic, readable serif font */
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 2em auto; /* Centering and some margin */
+    padding: 0 1em; /* Padding for smaller screens */
+    background-color: #fdfcf7; /* A very light cream background */
+    color: #333333; /* Dark grey for text, better contrast */
+}
+
+h1, h2 {
+    font-family: 'Helvetica Neue', sans-serif; /* A cleaner sans-serif for headings */
+    color: #4a3b31; /* A darker, earthy brown for headings */
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 2.2em;
+    text-align: center;
+    border-bottom: 2px solid #d4c8b8; /* Subtle border below main title */
+    padding-bottom: 0.3em;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #5a4637; /* Slightly lighter brown for H2 */
+    border-bottom: 1px solid #e0d8c8;
+    padding-bottom: 0.2em;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 1.2em;
+    font-size: 1.05em; /* Slightly larger paragraph font for readability */
+}
+
+nav {
+    margin-top: 3em;
+    text-align: center;
+    border-top: 1px solid #d4c8b8;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+}
+
+nav a {
+    margin: 0 1em;
+    color: #5a4637;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: none;
+    background-color: #e0d8c8;
+    color: #4a3b31;
+}
+
+/* Styling for the chapter list in index.html */
+ol {
+    list-style: none; /* Remove default bullet points */
+    padding-left: 0;
+    max-width: 500px;
+    margin: 1em auto;
+    text-align: left;
+}
+
+ol li {
+    margin-bottom: 0.8em;
+    background-color: #f7f2e9; /* Light background for list items */
+    padding: 0.8em 1.2em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+ol li:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+ol li a {
+    color: #5a4637;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+ol li a:hover {
+    text-decoration: underline;
+    color: #4a3b31;
+}
+
+/* Links within chapter text */
+p a {
+    color: #7a6855; /* A slightly more distinct link color */
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px dotted #7a6855;
+}
+
+p a:hover {
+    color: #4a3b31;
+    text-decoration: none;
+    border-bottom: 1px solid #4a3b31;
+}
+
+/* Horizontal rule for thematic break */
+hr {
+    border: 0;
+    height: 1px;
+    background: #d4c8b8;
+    margin: 2em 0;
+}
