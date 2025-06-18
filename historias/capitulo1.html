@@ -29,7 +29,11 @@
                     <br><em>(Más descripciones del entorno, sensaciones, pensamientos iniciales de Elara...)</em>
                 </p>
                 <p>
-                    Mientras ayudaba en el huerto comunal, su azada golpeó algo duro. Con curiosidad, excavó con cuidado, revelando un <span class="tooltip">extraño artefacto<span class="tooltip-texto">Un objeto metálico oscuro cubierto de símbolos pulsantes, frío al tacto.</span></span> de metal oscuro, cubierto de símbolos desconocidos que parecían pulsar con una luz tenue.
+                    Mientras ayudaba en el huerto comunal, su azada golpeó algo duro. Con curiosidad, excavó con cuidado, revelando un <span class="activador-modal tooltip"
+                          data-modal-titulo="El Artefacto Ancestral"
+                          data-modal-parrafo1="Un objeto metálico oscuro, frío al tacto, cubierto de símbolos arcanos que parecen <span class='tooltip'>pulsar<span class='tooltip-texto'>La pulsación es sutil, casi imperceptible.</span></span> con una luz interna.<br>Se cree que data de la Guerra Olvidada y posee poderes desconocidos sobre el tiempo y el espacio."
+                          data-modal-parrafo2="Su redescubrimiento por Elara ha desencadenado eventos imprevistos."
+                          style="cursor: pointer; font-weight: bold;">extraño artefacto<span class="tooltip-texto">Un objeto metálico oscuro cubierto de símbolos pulsantes, frío al tacto.</span></span> de metal oscuro, cubierto de símbolos desconocidos que parecían pulsar con una luz tenue.
                     <br><em>(Descripción detallada del artefacto, reacciones de Elara y otros posibles aldeanos presentes...)</em>
                 </p>
                 <p>
@@ -73,5 +77,17 @@
         <p>Fin del Capítulo 1. Decisiones y caminos se abren ante Elara.</p>
         <p><a href="../index.html">Volver al Índice</a></p>
     </footer>
+
+    <!-- El Modal Genérico -->
+    <div id="miModal" class="modal-contenedor">
+        <!-- Contenido del Modal -->
+        <div class="modal-contenido">
+            <span class="modal-cerrar">&times;</span>
+            <h2>Título del Modal</h2>
+            <p>Contenido de ejemplo del modal...</p>
+            <p>Más contenido aquí.</p>
+        </div>
+    </div>
+    <script src="../js/interacciones.js"></script>
 </body>
 </html>

@@ -16,9 +16,27 @@
         <ul>
             <li><a href="historias/capitulo1.html">Capítulo 1: El Comienzo</a></li>
         </ul>
+        <button class="activador-modal"
+                data-modal-titulo="Modal de Prueba (Generalizado)"
+                data-modal-parrafo1="Este modal se activa usando el sistema generalizado con clases y atributos data-."
+                data-modal-parrafo2="¡Funciona para cualquier elemento con la clase 'activador-modal'!">
+            Abrir Modal de Prueba (Generalizado)
+        </button>
     </main>
     <footer>
         <p>&copy; 2024 Novela Multidimensional</p>
     </footer>
+
+    <!-- El Modal Genérico -->
+    <div id="miModal" class="modal-contenedor">
+        <!-- Contenido del Modal -->
+        <div class="modal-contenido">
+            <span class="modal-cerrar">&times;</span>
+            <h2>Título del Modal</h2>
+            <p>Contenido de ejemplo del modal...</p>
+            <p>Más contenido aquí.</p>
+        </div>
+    </div>
+    <script src="js/interacciones.js"></script>
 </body>
 </html>
