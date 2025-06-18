@@ -3,23 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Las Ruinas de Cerezo: Crónicas de Castilla</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Novela Multidimensional</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <h1>Las Ruinas de Cerezo: Crónicas de Castilla</h1>
-    <p>Desde el polvo de los siglos, las Ruinas de Cerezo narran la épica de Castilla. Escucha sus susurros y viaja a través del tiempo para descubrir los cimientos de un reino, las vidas de sus gentes y el eco imperecedero de la historia.</p>
+    <header>
+        <h1>Novela Multidimensional</h1>
+        <p>Una aventura interactiva.</p>
+    </header>
+    <main>
+        <h2>Comenzar la Lectura</h2>
+        <ul>
+            <li><a href="historias/capitulo1.html">Capítulo 1: El Comienzo</a></li>
+        </ul>
+        <button class="activador-modal"
+                data-modal-titulo="Modal de Prueba (Generalizado)"
+                data-modal-parrafo1="Este modal se activa usando el sistema generalizado con clases y atributos data-."
+                data-modal-parrafo2="¡Funciona para cualquier elemento con la clase 'activador-modal'!">
+            Abrir Modal de Prueba (Generalizado)
+        </button>
+    </main>
+    <footer>
+        <p>&copy; 2024 Novela Multidimensional</p>
+    </footer>
 
-    <h2>Capítulos</h2>
-    <ol>
-        <li><a href="capitulo1.html">Capítulo 1: Susurros del Lobo y el Águila</a></li>
-        <li><a href="capitulo2.html">Capítulo 2: Ecos Imperiales y Sueños de Mármol</a></li>
-        <li><a href="capitulo3.html">Capítulo 3: La Luz Menguante del Imperio</a></li>
-        <li><a href="capitulo4.html">Capítulo 4: Los Godos en la Tierra de los Robles</a></li>
-        <li><a href="capitulo5.html">Capítulo 5: La Media Luna Sobre Cerasio</a></li>
-        <li><a href="capitulo6.html">Capítulo 6: Los Primeros Condes y el Grito de un Nuevo Reino</a></li>
-        <li><a href="capitulo7.html">Capítulo 7: Forjando el Acero de Castilla</a></li>
-        <li><a href="capitulo8.html">Capítulo 8: Ecos en el Polvo (Conclusión)</a></li>
-    </ol>
+    <!-- El Modal Genérico -->
+    <div id="miModal" class="modal-contenedor">
+        <!-- Contenido del Modal -->
+        <div class="modal-contenido">
+            <span class="modal-cerrar">&times;</span>
+            <h2>Título del Modal</h2>
+            <p>Contenido de ejemplo del modal...</p>
+            <p>Más contenido aquí.</p>
+        </div>
+    </div>
+    <script src="js/interacciones.js"></script>
 </body>
 </html>
