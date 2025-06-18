@@ -73,6 +73,59 @@ Sigue estos pasos para expandir la novela:
     *   `.personajes-asociados` (para lugares)
     Puedes aplicar estas clases a las etiquetas `<section>` correspondientes en los archivos HTML para obtener un formato consistente.
 
+## Funcionalidades Interactivas
+
+### Modales Interactivos (Ventanas Emergentes)
+
+Los modales se utilizan para mostrar información adicional detallada sin necesidad de navegar a una nueva página. Por ejemplo, se pueden usar para dar más contexto sobre un objeto, un personaje secundario mencionado brevemente, o un concepto específico de la historia.
+
+**Cómo activar un modal:**
+
+1.  **Añadir Clase:** Al elemento HTML que desees que active el modal (puede ser un `<span>`, un `<a>`, un `<button>`, etc.), añádele la clase `activador-modal`.
+2.  **Definir Contenido con Atributos `data-*`:** En el mismo elemento, define el contenido que aparecerá en el modal usando los siguientes atributos:
+    *   `data-modal-titulo="El título que aparecerá en el modal"`: Define el encabezado del modal.
+    *   `data-modal-parrafo1="Contenido del primer párrafo. Puede incluir <b>HTML</b> simple."`: Define el texto del primer párrafo principal del modal.
+    *   `data-modal-parrafo2="Contenido del segundo párrafo (opcional)."`: Define un segundo párrafo. Si se omite, esta parte no se mostrará o quedará vacía.
+3.  **Estructura del Modal en la Página:** Asegúrate de que la estructura HTML base del modal esté presente en la página donde se va a utilizar el activador. Actualmente, esta estructura es:
+    ```html
+    <!-- El Modal Genérico -->
+    <div id="miModal" class="modal-contenedor">
+        <!-- Contenido del Modal -->
+        <div class="modal-contenido">
+            <span class="modal-cerrar">&times;</span>
+            <h2>Título del Modal</h2> <!-- Este H2 será reemplazado por data-modal-titulo -->
+            <p>Contenido de ejemplo...</p> <!-- Este p será reemplazado por data-modal-parrafo1 -->
+            <p>Más contenido aquí.</p> <!-- Este p será reemplazado por data-modal-parrafo2 -->
+        </div>
+    </div>
+    ```
+    (Esta estructura se puede copiar de `index.html` o `historias/capitulo1.html` y pegarla antes del cierre del `</body>`).
+4.  **Enlazar JavaScript:** La página debe tener enlazado el script de interacciones: `<script src="js/interacciones.js"></script>` (o `../js/interacciones.js` si está en una subcarpeta), preferiblemente al final del `<body>`.
+
+**Ejemplo de un activador de modal:**
+
+```html
+<span class="activador-modal tooltip"
+      data-modal-titulo="Información sobre el Medallón"
+      data-modal-parrafo1="Este antiguo medallón perteneció a los Guardianes del Tiempo."
+      data-modal-parrafo2="Se dice que vibra en presencia de anomalías temporales."
+      style="cursor: pointer; font-weight: bold;">
+    el viejo medallón
+    <span class="tooltip-texto">Haz clic para saber más sobre el medallón.</span>
+</span>
+```
+Este ejemplo muestra un `<span>` que, al ser clickeado, abrirá un modal con el título "Información sobre el Medallón" y los dos párrafos especificados. También conserva la funcionalidad de tooltip CSS.
+
+### Tooltips (Información rápida)
+Los tooltips CSS se utilizan para mostrar información breve al pasar el cursor sobre un elemento.
+*   **Cómo usarlos:** Envuelve el texto que quieres que tenga un tooltip con un `<span>` (o usa un elemento existente como `<a>`).
+    *   Añade la clase `tooltip` al elemento contenedor.
+    *   Dentro de este elemento, añade otro `<span>` con la clase `tooltip-texto` y el contenido del tooltip.
+*   **Ejemplo:**
+    ```html
+    El <span class="tooltip">artefacto<span class="tooltip-texto">Un objeto misterioso y antiguo.</span></span> brillaba con luz propia.
+    ```
+
 ## Futuras Mejoras
 
 *   **Interactividad con JavaScript:** Se podría añadir JavaScript para funcionalidades como:
