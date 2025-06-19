@@ -27,6 +27,9 @@ Este proyecto es una novela interactiva desarrollada en HTML, CSS y (futuramente
     *   Actualmente vacío, pero contiene un `.gitkeep`.
 *   `media/`: Para almacenar imágenes, mapas, u otros archivos multimedia que se puedan incorporar en la novela.
     *   Actualmente vacío, pero contiene un `.gitkeep`.
+*   `plot_outlines/`: Contiene los esquemas y resúmenes de las tramas de los capítulos.
+    *   `index_tramas.md`: Índice de las tramas disponibles.
+    *   Ejemplo: `chapter2_outline.md`
 
 ## Cómo Añadir Nuevo Contenido
 
